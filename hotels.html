@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="site-header">
+        <a class="site-header-logo" href="index.html">
+            <img src="img/navigation-logo.jpg" width="150" height="150" alt="Логотип сайта">
+            <!-- уточнить размеры картинки -->
+        </a>
+        <nav class="site-navigation">
+        <ul class="site-navigation-list">
+          <!-- два пункта справа от лого, два - слева -->
+          <li class="site-navigation-item-left"><a href="info.html">Информация</a></li>
+          <li class="site-navigation-item-left"><a href="photos.html">Фото и видео</a></li>
+          <li class="site-navigation-item-right"><a href="site-map.html">Карта штата</a></li>
+          <li class="site-navigation-item-right site-navigation-item-current"><a>Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hotels-main">
+      <h1 class="visually-hidden">Гостиницы</h1>
+      <section class="search-options">
+        <h2 class="visually-hidden">Параметры поиска</h2>
+        <!-- здесь будет форма с заданием параметров поиска-->
+      </section>
+      <section class="search-results">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <h3 class="visually-hidden">Параметры сортировки</h3>
+        <!-- здесь будет форма с заданием сортировки отображения результатов поиска -->
+        <section class="catalog">
+          <!-- результаты поиска -->
+          <h3 class="visually-hidden">Список гостиниц</h3>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <p class="catalog-item-img">
+                <a href="#"><img src="img/hotel_amara.jpg" alt="Фото отель Amara"></a>
+                <!-- добавить ссылку на страницу описания отеля -->
+              </p>
+              <p class="catalog-item-info">
+                <span class="catalog-item-title">Amara resort & spa</span>
+                <span class="catalog-item-type">Гостиница</span>
+                <span class="catalog-itm-price">от 4000 р.</span>
+                <a class="button-moreinfo" href="#">Подробнее</a>
+                <a class="button-booking">Забронировать</a>
+                <span class="catalog-rating-stars">№ звезд</span>
+                <span class="hotel-rating-number">Рейтинг: </span><span class="hotel-rating-number-result">8,5</span>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item-img">
+                <a href="#"><img src="img/hotel_desert.jpg" alt="Фото отель Desert"></a>
+                <!-- добавить ссылку на страницу описания отеля -->
+              </p>
+              <p class="catalog-item-info">
+                <span class="catalog-item-title">Desert quail inn</span>
+                <span class="catalog-item-type">Мотель</span>
+                <span class="catalog-itm-price">от 3000 р.</span>
+                <a class="button-moreinfo" href="#">Подробнее</a>
+                <a class="button-booking">Забронировать</a>
+                <span class="catalog-rating-stars">№ звезд</span>
+                <span class="hotel-rating-number">Рейтинг: </span><span class="hotel-rating-number-result">8,5</span>
+              </p>
+            </li>
+              <li class="catalog-item">
+                <p class="catalog-item-img">
+                  <a href="#"><img src="img/hotel_villas.jpg" alt="Фото отель Villas"></a>
+                  <!-- добавить ссылку на страницу описания отеля -->
+                </p>
+                <p class="catalog-item-info">
+                  <span class="catalog-item-title">Villas at poco diablo</span>
+                  <span class="catalog-item-type">Аппартаменты</span>
+                  <span class="catalog-itm-price">от 2000 р.</span>
+                  <a class="button-moreinfo" href="#">Подробнее</a>
+                  <a class="button-booking">Забронировать</a>
+                  <span class="catalog-rating-stars">№ звезд</span>
+                  <span class="hotel-rating-number">Рейтинг: </span><span class="hotel-rating-number-result">8,5</span>
+                </p>
+              </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p><a class="visitsedona">#visitsedona</a></p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">ВКонтакте</a></li>
+          <li><a class="social-button" href="#">facebook</a></li>
+          <li><a class="social-button" href="#">instagram</a></li>
+        </ul>
+      </div>
+      <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/htmlacademy-logo.jpg" width="100" height="25" alt="Логотип сайта html academy">
+        <!-- уточнить размеры картинки -->
+      </a>
+    </footer>
+  </body>
+</html>
