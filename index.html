@@ -7,8 +7,8 @@
   <body>
     <header class="site-header">
       <a class="site-header-logo">
-          <img src="img/navigation-logo.jpg" width="150" height="150" alt="Логотип сайта">
-          <!-- уточнить размеры картинки -->
+        <img src="img/navigation-logo.jpg" width="150" height="150" alt="Логотип сайта">
+        <!-- уточнить размеры картинки -->
       </a>
       <nav class="site-navigation">
         <ul class="site-navigation-list">
@@ -30,32 +30,34 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="features-header">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <ul class="features-list">
+        <ul class="features-list-numbered">
           <li class="feature-item-numbered backgroundfoto-right">
             <h3>Настоящий городок</h3>
-            <p>№1</p>
+            <span>- №1 -</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </li>
           <li class="feature-item-numbered backgroundfoto-left">
             <h3>Там есть мост дьявола</h3>
-            <p>№2</p>
+            <span>- №2 -</span>
             <p>Да, по нему можно пойти если конечно вы осмелитесь</p>
           </li>
           <li class="feature-item-numbered">
             <h3>Небольшая площадь</h3>
-            <p>№3</p>
+            <span>- №3 -</span>
             <p>Все достопримечательности находятся близко</p>
           </li>
           <li class="feature-item-numbered">
             <h3>Красивая дорога</h3>
-            <p>№4</p>
+            <span>- №4 -</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </li>
           <li class="feature-item-numbered">
             <h3>Мало туристов</h3>
-            <p>№5</p>
+            <span>- №5 -</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
+        </ul>
+        <ul class="features-list-nonnumbered">
           <!-- мелкие картинки к неперечисляемым преимуществам -->
           <li class="feature-item-housing">
             <h3>Жилье</h3>
@@ -73,18 +75,35 @@
       </section>
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <p><b>Заинтересовались?</b></p>
+        <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search-button" href="hotels.html">Поиск гостиницы в Седоне</a>
-        <section class="city-map">
-          <h3 class="visually-hidden">Карта Седоны</h3>
-          <img src="img/sedona-map.jpg" width="800" height="300" alt="Карта Седоны">
-          <!-- уточнить размеры картинки -->
+      </section>
+      <section class="city-map">
+        <h3 class="visually-hidden">Карта Седоны</h3>
+        <img src="img/sedona-map.jpg" width="800" height="300" alt="Карта Седоны">
+        <!-- уточнить размеры картинки -->
+        <section class="modal-hotel-search">
+          <!-- форма поиска гостиницы-->
+          <h3>Поиск гостиницы в Седоне</h3>
+          <!--
+          <label for="date-arrivale">Дата заезда</label>
+          <input class="input-date" type="text" id="date-arrivale">
+          <label for="date-departure">Дата отъезда</label>
+          <input class="input-date" type="text" id="date-departure">
+          <label for="q-adults">Взрослые</label>
+          <input class="input-quantity" type="number" id="q-adults">
+          <label for="q-children">Дети</label>
+          <input class="input-quantity" type="number" id="q-children">
+          <input class="button-search" type="submit" value="Найти">
+          -->
         </section>
       </section>
     </main>
     <footer>
-      <p><a class="visitsedona">#visitsedona</a></p>
+      <div class="footer-visitsedona">
+        <a class="visitsedona">#visitsedona</a>
+      </div>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">ВКонтакте</a></li>
@@ -92,26 +111,12 @@
           <li><a class="social-button" href="#">instagram</a></li>
         </ul>
       </div>
-      <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/htmlacademy-logo.jpg" width="100" height="25" alt="Логотип сайта html academy">
-        <!-- уточнить размеры картинки -->
-      </a>
+      <div class="footer-htmlacademy-logo">
+        <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/htmlacademy-logo.jpg" width="100" height="25" alt="Логотип сайта html academy">
+          <!-- уточнить размеры картинки -->
+        </a>
+      </div>
     </footer>
-
-    <section class="modal-hotel-search">
-      <!-- форма поиска гостиницы-->
-      <h3>Поиск гостиницы в Седоне</h3>
-      <!--
-      <label for="date-arrivale">Дата заезда</label>
-      <input class="input-date" type="text" id="date-arrivale">
-      <label for="date-departure">Дата отъезда</label>
-      <input class="input-date" type="text" id="date-departure">
-      <label for="q-adults">Взрослые</label>
-      <input class="input-quantity" type="number" id="q-adults">
-      <label for="q-children">Дети</label>
-      <input class="input-quantity" type="number" id="q-children">
-      <input class="button-search" type="submit" value="Найти">
-      -->
-    </section>
   </body>
 </html>
