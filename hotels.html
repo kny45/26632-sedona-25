@@ -22,35 +22,36 @@
     </header>
     <main class="hotels-main">
       <h1 class="visually-hidden">Гостиницы</h1>
-      <section class="search-options">
-        <h2 class="visually-hidden">Параметры поиска</h2>
-        <!-- здесь будет форма с заданием параметров поиска-->
-        <div class="search-options-infrastructure">
-          <h3>Инфраструктура:</h3>
-          <label for="check-pool">Бассейн</label>
-          <input type="checkbox" id="check-pool" value="poll">
-          <label for="check-paring">Парковка</label>
-          <input type="checkbox" id="check-paring" value="parking">
-          <label for="check-wifi">WI-FI</label>
-          <input type="checkbox" id="check-wifi" value="wi-fi">
-        </div>
-        <div class="search-options-housingtype">
-          <h3>Тип жилья:</h3>
-          <label for="check-hotel">Гостиница</label>
-          <input type="checkbox" id="check-hotel" value="hotel">
-          <label for="check-motel">Мотель</label>
-          <input type="checkbox" id="check-motel" value="motel">
-          <label for="check-apartments">Апартаменты</label>
-          <input type="checkbox" id="check-apartments" value="apartments">
-        </div>
-        <div class="search-options-price">
-          <h3>Стоимость в сутки (р):</h3>
-          <span class="searchprice-from">От 0</span>
-          <span class="searchprice-to">До 3000</span>
-          <!-- здесь будет "ползунок" для выбора дапозона цен -->
-        </div>
-        <input type="submit" value="Показать">
-      </section>
+      <form action="#" method="post"> <!-- задание параметров поиска отеля; заменить url -->
+        <section class="search-options">
+          <h2 class="visually-hidden">Параметры поиска</h2>
+          <div class="search-options-infrastructure">
+            <h3>Инфраструктура:</h3>
+            <label for="check-pool">Бассейн</label>
+            <input type="checkbox" id="check-pool" value="poll">
+            <label for="check-paring">Парковка</label>
+            <input type="checkbox" id="check-paring" value="parking">
+            <label for="check-wifi">WI-FI</label>
+            <input type="checkbox" id="check-wifi" value="wi-fi">
+          </div>
+          <div class="search-options-housingtype">
+            <h3>Тип жилья:</h3>
+            <label for="check-hotel">Гостиница</label>
+            <input type="checkbox" id="check-hotel" value="hotel">
+            <label for="check-motel">Мотель</label>
+            <input type="checkbox" id="check-motel" value="motel">
+            <label for="check-apartments">Апартаменты</label>
+            <input type="checkbox" id="check-apartments" value="apartments">
+          </div>
+          <div class="search-options-price">
+            <h3>Стоимость в сутки (р):</h3>
+            <span class="searchprice-from">От 0</span>
+            <span class="searchprice-to">До 3000</span>
+            <!-- здесь будет "ползунок" для выбора дапозона цен -->
+          </div>
+          <input type="submit" value="Показать">
+        </section>
+      </form>
       <section class="search-results">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <h3 class="visually-hidden">Параметры сортировки</h3>
