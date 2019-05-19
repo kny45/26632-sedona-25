@@ -81,23 +81,34 @@
       </section>
       <section class="city-map">
         <h3 class="visually-hidden">Карта Седоны</h3>
-        <img src="img/sedona-map.jpg" width="800" height="300" alt="Карта Седоны">
-        <!-- уточнить размеры картинки -->
-        <section class="modal-hotel-search">
-          <!-- форма поиска гостиницы-->
-          <h3>Поиск гостиницы в Седоне</h3>
-          <!--
-          <label for="date-arrivale">Дата заезда</label>
-          <input class="input-date" type="text" id="date-arrivale">
-          <label for="date-departure">Дата отъезда</label>
-          <input class="input-date" type="text" id="date-departure">
-          <label for="q-adults">Взрослые</label>
-          <input class="input-quantity" type="number" id="q-adults">
-          <label for="q-children">Дети</label>
-          <input class="input-quantity" type="number" id="q-children">
-          <input class="button-search" type="submit" value="Найти">
-          -->
-        </section>
+        <img src="img/sedona-map.jpg" width="1200" height="594" alt="Карта окрестностей Седоны">
+      </section>
+      <section class="modal-hotel-search">
+        <h3>Поиск гостиницы в Седоне</h3>
+        <!-- форма поиска гостиницы-->
+        <form class="form-hotel-search" action="#" method="post" > <!-- заменить url -->
+          <p class="form-hotel-search-item">
+            <label for="date-arrivale">Дата заезда</label>
+            <input id="date-arrivale" class="input-date" type="text" name="date-arrivale" value="" placeholder="27 апреля 2017">
+          </p>
+          <p class="form-hotel-search-item">
+            <label for="date-departure">Дата отъезда</label>
+            <input id="date-departure" class="input-date" type="text" name="date-departure" value="" placeholder="04 июля 2017">
+          </p>
+          <p class="form-hotel-search-item">
+            <label for="q-adults">Взрослые</label>
+            <button class="button-plus" type="button" aria-label="Добавить количество взрослых">+</button>
+            <input class="input-quantity" type="number" id="q-adults">
+            <button class="button-minus" type="button" aria-label="Уменьшить количество взрослых">-</button>
+          </p>
+          <p class="form-hotel-search-item">
+            <label for="q-children">Дети</label>
+            <button class="button-plus" type="button" aria-label="Добавить количество детей">+</button>
+            <input class="input-quantity" type="number" id="q-children">
+            <button class="button-plus" type="button" aria-label="Уменьшить количество детей">-</button>
+          </p>
+          <button class="button-search" type="submit">Найти</button>
+        </form>
       </section>
     </main>
     <footer>
