@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* главная страница */
+
+.site-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: white;
+}
+
+.site-navigation-list,
+.features-list-numbered,
+.features-list-nonnumbered {
+  list-style: none;
+}
+
+.site-navigation-list a {
+  color: #000000;
+}
+
+.site-navigation-list a:hover {
+  color: #81b3d2;
+}
+.site-navigation-list a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-item-current a {
+  color: #766357;
+}
+
+.features-header {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  background-color: white;
+}
+
+.features-header-text {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 400;
+  background-color: white;
+}
+
+/* заготовка для списка преимуществ
+.features-list-numbered h3 {
+  font-size: 21px;
+  line-height: 21px;
+  color: white;
+  font-weight: 400;
+  background-color: #81b3d2;
+}
+
+.features-list-numbered span,
+.features-list-numbered p {
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  font-weight: 400;
+  background-color: #81b3d2;
+}
+
+.features-list-nonnumbered h3 {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: 700;
+  background-color: white;
+}
+
+.features-list-nonnumbered p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+  background-color: white;
+}
+*/
+
+.hotel-search h3 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  background-color: white;
+}
+
+.hotel-search p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+  background-color: white;
+}
+
+.hotel-search a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #766357;
+  border: none;
+}
+
+.hotel-search a:hover {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #604e43;
+  border: none;
+}
+
+.hotel-search a:active {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #503e33;
+  border: none;
+}
+
+/* временно отключим попап*/
+.modal-hotel-search {
+  display: none
+}
+
+/* footer */
+.footer-visitsedona a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-list a {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+
+  text-decoration: none;
+
+  background-color: #81b3d2;
+}
+
+.social-list a:hover {
+  background-color: #669ec0;
+}
+
+.social-list a:active {
+  background-color: #5496bd;
+}
+
+
+/* страница со списком отелей */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-info h4 a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
+.catalog-item-info span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+.button-moreinfo {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-moreinfo:hover {
+  background-color: #669ec0;
+}
+
+.button-moreinfo:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #5496bd;
+}
+
+.button-booking {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #766357;
+  border: none;
+}
+
+.button-booking:hover {
+  background-color: #604e43;
+}
+
+.button-booking:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #503e33;
+}
+
+.hotel-rating-number {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+  font-weight: 400;
+  background-color: #f2f2f2;
+}
+
+/* заготовка
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+*/
