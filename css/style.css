@@ -191,7 +191,7 @@ a {
   list-style: none;
 }
 
-.catalog-item-info h4 a {
+.catalog-item-header {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
