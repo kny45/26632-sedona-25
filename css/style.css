@@ -63,22 +63,37 @@ a {
   background-color: white;
 }
 
-/* заготовка для списка преимуществ
-.features-list-numbered h3 {
-  font-size: 21px;
+
+.feature-item-numbered-white > * {
+  font-size: 14px;
   line-height: 21px;
   color: white;
   font-weight: 400;
   background-color: #81b3d2;
 }
 
-.features-list-numbered span,
-.features-list-numbered p {
-  font-size: 14px;
+.feature-item-numbered-white h3 {
+  font-size: 21px;
   line-height: 21px;
   color: white;
-  font-weight: 400;
+  font-weight: 700;
   background-color: #81b3d2;
+}
+
+.feature-item-numbered-black > * {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+  background-color: #eeeeee;
+}
+
+.feature-item-numbered-black h3 {
+  font-size: 21px;
+  line-height: 21px;
+  color: black;
+  font-weight: 700;
+  background-color: #eeeeee;
 }
 
 .features-list-nonnumbered h3 {
@@ -96,7 +111,6 @@ a {
   font-weight: 400;
   background-color: white;
 }
-*/
 
 .hotel-search h3 {
   font-size: 30px;
@@ -186,6 +200,96 @@ a {
 
 
 /* страница со списком отелей */
+
+.search-options {
+  background-color: #81b3d2;
+  background-image: url(../img/filter-canyon.jpg);
+  background-size: 1200px 800px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.search-options h3 {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.search-options label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.search-options-price span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.search-options-show {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+}
+
+.search-options-show:hover {
+  color: black;
+  background-color: white;
+}
+
+.search-results-total {
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+  font-weight: 700;
+  background-color: white;
+}
+
+.search-results-n-sort p {
+  font-size: 12px;
+  line-height: 18px;
+  color: black;
+  font-weight: 400;
+  background-color: white;
+}
+
+.search-results-sorttype-list {
+  list-style: none;
+}
+
+.search-results-sorttype-item a {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.search-results-sorttype-item a:hover {
+  color: #81b3d2;
+}
+
+.search-results-sorttype-item a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.search-results-sorttype-current a {
+  color: #81b3d2;
+  text-decoration: none;
+}
 
 .catalog-list {
   list-style: none;
