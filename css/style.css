@@ -64,7 +64,7 @@ a {
 }
 
 
-.feature-item-numbered-white > * {
+.feature-item-numbered-white {
   font-size: 14px;
   line-height: 21px;
   color: white;
@@ -80,7 +80,7 @@ a {
   background-color: #81b3d2;
 }
 
-.feature-item-numbered-black > * {
+.feature-item-numbered-black {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -96,19 +96,19 @@ a {
   background-color: #eeeeee;
 }
 
+.features-list-nonnumbered {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+  background-color: white;
+}
+
 .features-list-nonnumbered h3 {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   font-weight: 700;
-  background-color: white;
-}
-
-.features-list-nonnumbered p {
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-  font-weight: 400;
   background-color: white;
 }
 
