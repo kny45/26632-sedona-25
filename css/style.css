@@ -26,20 +26,24 @@ a {
   background-color: white;
 }
 
-.site-navigation-list,
+.site-navigation-list-left,
+.site-navigation-list-right,
 .features-list-numbered,
 .features-list-nonnumbered {
   list-style: none;
 }
 
-.site-navigation-list a {
+.site-navigation-list-left a,
+.site-navigation-list-right a{
   color: #000000;
 }
 
-.site-navigation-list a:hover {
+.site-navigation-list-left a:hover,
+.site-navigation-list-right a:hover {
   color: #81b3d2;
 }
-.site-navigation-list a:focus {
+.site-navigation-list-left a:focus,
+.site-navigation-list-right a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -201,6 +205,15 @@ a {
 
 /* страница со списком отелей */
 
+.inner-page {
+  background-color: #f2f2f2;
+  background-image: url(../img/filter-canyon.jpg);
+  background-size: 1200px 800px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/*
 .search-options {
   background-color: #81b3d2;
   background-image: url(../img/filter-canyon.jpg);
@@ -208,6 +221,7 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 }
+*/
 
 .search-options h3 {
   font-size: 16px;
@@ -359,7 +373,7 @@ a {
   background-color: #f2f2f2;
 }
 
-/* заготовка
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -370,4 +384,220 @@ a {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
-*/
+
+
+
+
+/* --- стили для сеток --- */
+
+/* главная страница */
+
+/* header */
+
+.site-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 76px;
+}
+
+.site-navigation {
+  display: flex;
+
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+  justify-content: space-between;
+}
+
+.site-navigation-list-left,
+.site-navigation-list-right {
+  margin: 0;
+  padding: 0;
+}
+
+/* main */
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* main - welcome */
+
+body {
+  background-image: url(../img/main-canyon.jpg);
+  background-position: center top;
+  background-size: 1200px 800px;
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+.welcome-sedona-wrapper {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 21px;
+}
+
+.welcome-intro-mask {
+  margin: 0;
+  padding: 0;
+}
+
+.features {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.features-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+}
+
+.features-header {
+  width: 440px;
+  text-align: center;
+}
+
+.features-list-numbered,
+.features-list-nonnumbered {
+  margin: 0;
+  padding: 0;
+
+}
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hotel-search p {
+  width: 434px;
+  text-align: center;
+}
+
+/* карта */
+.sedona-google-map {
+  width: 1200px;
+  height: 600px;
+  border: 0;
+}
+
+/* footer */
+.footer-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  display: flex;
+}
+
+.footer-visitsedona {
+  width: 136px;
+  padding-left: 132px;
+
+}
+
+.footer-social {
+  width: 150px;
+  padding-left: 256px;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-htmlacademy-logo {
+  width: 197px;
+  padding-left: 228px;
+}
+
+
+/* страница со списком отелей */
+
+.search-options {
+  background-color: transparent;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.search-results {
+  background-color: white;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item-article {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  padding: 0;
+}
+
+.catalog-item-img {
+  padding-left: 72px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.catalog-item-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item-info h4 {
+  margin: 0;
+  padding-bottom: 14px;
+}
+
+.item-type-price {
+  padding-bottom: 14px;
+}
+
+.catalog-item-header {
+  margin: 0;
+}
+
+.catalog-item-rating {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
