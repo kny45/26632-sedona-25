@@ -26,24 +26,20 @@ a {
   background-color: white;
 }
 
-.site-navigation-list-left,
-.site-navigation-list-right,
+.site-navigation-list,
 .features-list-numbered,
 .features-list-nonnumbered {
   list-style: none;
 }
 
-.site-navigation-list-left a,
-.site-navigation-list-right a{
+.site-navigation-list a {
   color: #000000;
 }
 
-.site-navigation-list-left a:hover,
-.site-navigation-list-right a:hover {
+.site-navigation-list a:hover {
   color: #81b3d2;
 }
-.site-navigation-list-left a:focus,
-.site-navigation-list-right a:focus {
+.site-navigation-list a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -205,6 +201,7 @@ a {
 
 /* страница со списком отелей */
 
+/*
 .inner-page {
   background-color: #f2f2f2;
   background-image: url(../img/filter-canyon.jpg);
@@ -212,8 +209,8 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 }
+*/
 
-/*
 .search-options {
   background-color: #81b3d2;
   background-image: url(../img/filter-canyon.jpg);
@@ -221,7 +218,6 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 }
-*/
 
 .search-options h3 {
   font-size: 16px;
@@ -398,7 +394,6 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 76px;
 }
 
 .site-navigation {
@@ -407,12 +402,9 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-
-  justify-content: space-between;
 }
 
-.site-navigation-list-left,
-.site-navigation-list-right {
+.site-navigation-list {
   margin: 0;
   padding: 0;
 }
@@ -427,13 +419,6 @@ a {
 
 /* main - welcome */
 
-body {
-  background-image: url(../img/main-canyon.jpg);
-  background-position: center top;
-  background-size: 1200px 800px;
-  background-repeat: no-repeat;
-}
-
 .main-header {
   display: flex;
   flex-direction: column;
@@ -441,17 +426,18 @@ body {
 
   margin: 0 auto;
   padding: 0;
+
+  background-image: url(../img/main-canyon.jpg);
+  background-position: center top;
+  background-size: 1200px 800px;
+  background-repeat: no-repeat;
 }
 
 .welcome-sedona-wrapper {
   margin: 0;
   padding: 0;
-  padding-bottom: 21px;
-}
-
-.welcome-intro-mask {
-  margin: 0;
-  padding: 0;
+  padding-top: 132px;
+  padding-bottom: 79px;
 }
 
 .features {
