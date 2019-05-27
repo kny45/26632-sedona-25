@@ -7,19 +7,25 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="site-header">
-      <a class="site-header-logo" href="index.html">
-        <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта">
-        <!-- уточнить размеры картинки -->
-      </a>
       <nav class="site-navigation">
-        <ul class="site-navigation-list">
+        <!--
+        <a class="site-header-logo">
+          <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта">
+        </a>
+        -->
+        <ul class="site-navigation-list-left">
           <!-- два пункта справа от лого, два - слева -->
-          <li class="site-navigation-item-left"><a href="info.html">Информация</a></li>
-          <li class="site-navigation-item-left"><a href="photos.html">Фото и видео</a></li>
-          <li class="site-navigation-item-right"><a href="site-map.html">Карта штата</a></li>
-          <li class="site-navigation-item-right site-navigation-item-current"><a>Гостиницы</a></li>
+          <li class="site-navigation-item"><a href="info.html">Информация</a></li>
+          <li class="site-navigation-item"><a href="photos.html">Фото и видео</a></li>
+        </ul>
+        <a class="site-header-logo" href="index.html">
+          <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта">
+        </a>
+        <ul class="site-navigation-list-right">
+          <li class="site-navigation-item"><a href="site-map.html">Карта штата</a></li>
+          <li class="site-navigation-item site-navigation-item-current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -84,14 +90,18 @@
                 </div>
                 <div class="catalog-item-info">
                   <h4><a class="catalog-item-header" href="#">Amara resort & spa</a></h4> <!-- добавить ссылку на страницу описания отеля -->
-                  <span class="catalog-item-type">Гостиница</span>
-                  <span class="catalog-itm-price">от 4000 р.</span>
-                  <a class="button-moreinfo" href="#">Подробнее</a>
-                  <a class="button-booking" href="#">Забронировать</a>
+                  <div class="item-type-price">
+                    <span class="catalog-item-type">Гостиница</span>
+                    <span class="catalog-itm-price">от 4000 р.</span>
+                  </div>
+                  <div class="item-buttons">
+                    <a class="button-moreinfo" href="#">Подробнее</a>
+                    <a class="button-booking" href="#">Забронировать</a>
+                  </div>
                 </div>
-                <div>
-                  <span class="catalog-rating-stars">№ звезд</span>
-                  <span class="hotel-rating-number">Рейтинг: 8,5</span>
+                <div class="catalog-item-rating">
+                  <div><span class="catalog-rating-stars">№ звезд</span></div>
+                  <div><span class="hotel-rating-number">Рейтинг: 8,5</span></div>
                 </div>
               </article>
             </li>
@@ -103,14 +113,18 @@
                 </div>
                 <div class="catalog-item-info">
                   <h4><a class="catalog-item-header" href="#">Desert quail inn</a></h4> <!-- добавить ссылку на страницу описания отеля -->
-                  <span class="catalog-item-type">Мотель</span>
-                  <span class="catalog-itm-price">от 3000 р.</span>
-                  <a class="button-moreinfo" href="#">Подробнее</a>
-                  <a class="button-booking" href="#">Забронировать</a>
+                  <div class="item-type-price">
+                    <span class="catalog-item-type">Мотель</span>
+                    <span class="catalog-itm-price">от 3000 р.</span>
+                  </div>
+                  <div class="item-buttons">
+                    <a class="button-moreinfo" href="#">Подробнее</a>
+                    <a class="button-booking" href="#">Забронировать</a>
+                  </div>
                 </div>
                 <div>
-                  <span class="catalog-rating-stars">№ звезд</span>
-                  <span class="hotel-rating-number">Рейтинг: 8,9</span>
+                  <div><span class="catalog-rating-stars">№ звезд</span></div>
+                  <div><span class="hotel-rating-number">Рейтинг: 8,9</span></div>
                 </div>
               </article>
             </li>
@@ -122,14 +136,18 @@
                 </div>
                 <div class="catalog-item-info">
                   <h4><a class="catalog-item-header" href="#">Villas at poco diablo</a></h4> <!-- добавить ссылку на страницу описания отеля -->
-                  <span class="catalog-item-type">Аппартаменты</span>
-                  <span class="catalog-itm-price">от 2000 р.</span>
-                  <a class="button-moreinfo" href="#">Подробнее</a>
-                  <a class="button-booking" href="#">Забронировать</a>
+                  <div class="item-type-price">
+                    <span class="catalog-item-type">Аппартаменты</span>
+                    <span class="catalog-itm-price">от 2000 р.</span>
+                  </div>
+                  <div class="item-buttons">
+                    <a class="button-moreinfo" href="#">Подробнее</a>
+                    <a class="button-booking" href="#">Забронировать</a>
+                  </div>
                 </div>
                 <div>
-                  <span class="catalog-rating-stars">№ звезд</span>
-                  <span class="hotel-rating-number">Рейтинг: 9,2</span>
+                  <div><span class="catalog-rating-stars">№ звезд</span></div>
+                  <div><span class="hotel-rating-number">Рейтинг: 9,2</span></div>
                 </div>
               </article>
             </li>
@@ -138,23 +156,25 @@
       </section>
     </main>
     <footer>
-      <div class="footer-visitsedona">
-        <a class="visitsedona" href="#">#visitsedona</a>
-      </div>
-      <div class="footer-social">
-        <ul class="social-list">
-          <li><a class="social-button" href="#" aria-label="Седона в ВКонтакте">ВКонтакте</a></li>
-          <li><a class="social-button" href="#" aria-label="Седона на Фейсбуке">facebook</a></li>
-          <li><a class="social-button" href="#" aria-label="Седона в Инстаграме">instagram</a></li>
-        </ul>
-      </div>
-      <div class="footer-htmlacademy-logo">
-        <p>Website by</p>
-        <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип сайта html academy">
-          <!-- уточнить размеры картинки -->
-        </a>
-      </div>
+      <div class="footer-wrapper">
+        <div class="footer-visitsedona">
+          <a class="visitsedona" href="#">#visitsedona</a>
+        </div>
+        <div class="footer-social">
+          <ul class="social-list">
+            <li><a class="social-button" href="#" aria-label="Седона в ВКонтакте">ВКонтакте</a></li>
+            <li><a class="social-button" href="#" aria-label="Седона на Фейсбуке">facebook</a></li>
+            <li><a class="social-button" href="#" aria-label="Седона в Инстаграме">instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer-htmlacademy-logo">
+          <p>Website by</p>
+          <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип сайта html academy">
+            <!-- уточнить размеры картинки -->
+          </a>
+        </div>
+        </div>
     </footer>
   </body>
 </html>
