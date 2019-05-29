@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-/* главная страница */
+/* header */
 
 .site-navigation {
   font-size: 14px;
@@ -24,6 +24,8 @@ a {
   font-weight: 700;
   color: #000000;
   background-color: white;
+
+  position: relative;
 }
 
 .site-navigation-list,
@@ -32,9 +34,52 @@ a {
   list-style: none;
 }
 
-.site-navigation-list a {
-  color: #000000;
+.site-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.site-navigation-item a {
+  color: #000000;
+  display: block;
+}
+
+.site-navigation-item a {
+  box-sizing: border-box;
+  width: 239px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.site-navigation-item:nth-child(1) a {
+  text-align: left;
+  padding-left: 72px;
+}
+
+.site-navigation-item:nth-child(2) a {
+  text-align: left;
+  padding-left: 73px;
+
+  margin-right: 244px;
+}
+
+.site-navigation-item:nth-child(3) a {
+  text-align: left;
+  padding-left: 76px;
+
+  /*
+  text-align: right;
+  padding-right: 73px;
+  */
+}
+
+.site-navigation-item:nth-child(4) a {
+  text-align: right;
+  padding-right: 72px;
+}
+
 
 .site-navigation-list a:hover {
   color: #81b3d2;
@@ -42,6 +87,14 @@ a {
 .site-navigation-list a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
+
+/* логотип */
+.site-header-logo {
+  position: absolute;
+  top: 0;
+  left: 529px;
+}
+
 
 .site-navigation-item-current a {
   color: #766357;
@@ -63,6 +116,8 @@ a {
   background-color: white;
 }
 
+
+/* главная страница */
 
 .feature-item-numbered-white {
   font-size: 14px;
@@ -164,38 +219,6 @@ a {
 /* временно отключим попап*/
 .modal-hotel-search {
   display: none
-}
-
-/* footer */
-.footer-visitsedona a {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.social-list {
-  list-style: none;
-}
-
-.social-list a {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #000000;
-
-  text-decoration: none;
-
-  background-color: #81b3d2;
-}
-
-.social-list a:hover {
-  background-color: #669ec0;
-}
-
-.social-list a:active {
-  background-color: #5496bd;
 }
 
 
@@ -437,7 +460,7 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 132px;
-  padding-bottom: 79px;
+  padding-bottom: 79px; /* уточнить расстояние до маски */
 }
 
 .features {
@@ -503,7 +526,16 @@ a {
 .footer-visitsedona {
   width: 136px;
   padding-left: 132px;
+  padding-top: 47px;
+  padding-bottom: 47px; /* отсутп снизу -> получим общую высоту футера */
+}
 
+.footer-visitsedona a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-social {
@@ -512,14 +544,68 @@ a {
 }
 
 .social-list {
-  margin: 0;
+  list-style: none;
+
+  margin: 0 auto;
   padding: 0;
+  padding-top: 36px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer-htmlacademy-logo {
+  display: flex;
+
   width: 197px;
   padding-left: 228px;
+  margin: 0;
 }
+
+.footer-htmlacademy-logo p {
+  padding-top: 50px;
+  padding-right: 8px;
+  margin: 0;
+}
+
+.htmlacademy-logo {
+  display: block;
+  padding-top: 39px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.htmlacademy-logo:hover path {
+  fill: #81b3d2;
+}
+
+.htmlacademy-logo:active path {
+  fill: #bdbbbc;
+}
+
 
 
 /* страница со списком отелей */
