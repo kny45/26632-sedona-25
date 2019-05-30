@@ -438,6 +438,8 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+
+  position: relative;
 }
 
 /* main - welcome */
@@ -506,21 +508,39 @@ a {
 }
 
 /* карта */
+
+/* тест
+.city-map {
+  width: 1200px;
+  height: 600px;
+  background-color: red;
+}
+*/
+
 .sedona-google-map {
+  box-sizing: border-box;
   width: 1200px;
   height: 600px;
   border: 0;
+
 }
 
 /* footer */
+
 .footer-wrapper {
   width: 1200px;
   margin: 0 auto;
+  margin-top: -120px;
   padding: 0;
 
   background-color: rgba(255, 255, 255, 0.9);
 
   display: flex;
+
+/*
+  position: relative;
+  z-index: 1;
+*/
 }
 
 .footer-visitsedona {
@@ -535,7 +555,9 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  /*
   background-color: rgba(255, 255, 255, 0.9);
+  */
 }
 
 .footer-social {
