@@ -93,28 +93,44 @@
         <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
         <!-- форма поиска гостиницы-->
         <form class="form-hotel-search" action="#" method="post" > <!-- заменить url -->
-          <p class="form-hotel-search-item">
+          <div class="form-hotel-search-item">
             <label for="date-arrivale">Дата заезда:</label>
             <input id="date-arrivale" class="input-date" type="text" name="date-arrivale" value="" placeholder="27 апреля 2017">
-          </p>
-          <p class="form-hotel-search-item">
+          </div>
+          <div class="form-hotel-search-item">
             <label for="date-departure">Дата отъезда:</label>
             <input id="date-departure" class="input-date" type="text" name="date-departure" value="" placeholder="04 июля 2017">
-          </p>
-          <p class="form-hotel-search-item">
+          </div>
+          <div class="form-hotel-search-item">
             <div class="form-hotel-search-item-wrapper">
               <label for="q-adults">Взрослые:</label>
-              <button class="button-plus" type="button" aria-label="Добавить количество взрослых">+</button>
+              <button class="button-minus" type="button" aria-label="Уменьшить количество взрослых">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" viewBox="0 0 12 3">
+                    <image width="12" height="3" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAJklEQVQImWNcuXJlKAMDwyoG4kAYEwMDgxKRikFACaSBeMDAwAAA4bEDmgdSTr8AAAAASUVORK5CYII="/>
+                  </svg>
+              </button>
               <input class="input-quantity" type="number" id="q-adults" value="2">
-              <button class="button-minus" type="button" aria-label="Уменьшить количество взрослых">-</button>
+              <button class="button-plus" type="button" aria-label="Добавить количество взрослых">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11">
+                  <image width="11" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAVUlEQVQYlWNkQAMrV648w8DAYMzAwHA2PDzcBFmWCV0xVCEyjVcxTkCSYkYkNxICZ5mIVAj2A0jxeyIVv8cWdP9h7PDwcBR52oUGNsUwP6D6hYGBAQDrUhFjIwl98gAAAABJRU5ErkJggg=="/>
+                </svg>
+              </button>
             </div>
             <div class="form-hotel-search-item-wrapper">
               <label for="q-children">Дети:</label>
-              <button class="button-plus" type="button" aria-label="Добавить количество детей">+</button>
+              <button class="button-minus" type="button" aria-label="Уменьшить количество детей">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" viewBox="0 0 12 3">
+                    <image width="12" height="3" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAJklEQVQImWNcuXJlKAMDwyoG4kAYEwMDgxKRikFACaSBeMDAwAAA4bEDmgdSTr8AAAAASUVORK5CYII="/>
+                  </svg>
+              </button>
               <input class="input-quantity" type="number" id="q-children" value="0">
-              <button class="button-plus" type="button" aria-label="Уменьшить количество детей">-</button>
+              <button class="button-plus" type="button" aria-label="Добавить количество детей">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11">
+                  <image id="_" data-name="" width="11" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAVUlEQVQYlWNkQAMrV648w8DAYMzAwHA2PDzcBFmWCV0xVCEyjVcxTkCSYkYkNxICZ5mIVAj2A0jxeyIVv8cWdP9h7PDwcBR52oUGNsUwP6D6hYGBAQDrUhFjIwl98gAAAABJRU5ErkJggg=="/>
+                </svg>
+              </button>
             </div>
-          </p>
+          </div>
           <button class="button-search" type="submit">Найти</button>
         </form>
       </section>
