@@ -264,7 +264,7 @@ p {
   color: #000000;
 }
 
-.form-hotel-search-item input {
+.input-date {
   display: block;
   box-sizing: border-box;
   width: 346px;
@@ -280,24 +280,25 @@ p {
 
   background-color: #f2f2f2;
   border: none;
+
+  opacity: 1;
+  outline: none;
 }
 
-.form-hotel-search-item input:hover {
+.input-date:hover {
   background-color: #ebebeb;
 }
 
-.form-hotel-search-item input:focus {
+.input-date:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5; /* ? - все равно синия рамка */
+  border: 2px solid #e5e5e5;
 }
 
-/* обертка для полей указания количества взрослых/детей */
-/* ? - ожидаю, что обертки будут на одной строке*/
 .form-hotel-search-item-wrapper {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-bottom: 55px;
+  padding-bottom: 24px;
 
   justify-content: space-between;
   align-items: center;
@@ -311,6 +312,17 @@ p {
   color: #000000;
 }
 
+.form-hotel-search-item-wrapper label {
+  padding-right: 27px;
+}
+
+.form-hotel-search-item-wrapper:first-child label {
+  box-sizing: border-box;
+  width: 112px;
+  padding-left: 0;
+  padding-right: 41px;
+}
+
 .input-quantity {
   margin: 0;
   padding: 0;
@@ -318,6 +330,28 @@ p {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  opacity: 1;
+  outline: none;
+}
+
+.input-quantity:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.input-quantity::-webkit-outer-spin-button,
+.input-quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .button-plus,
@@ -328,7 +362,16 @@ p {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
+
+  opacity: 1;
+  outline: none;
 } /* ? как сделать "картинки" на кнопках как на макете */
+
+.button-plus:focus,
+.button-minus:focus {
+  border: 2px solid #e5e5e5;
+}
+
 
 .button-search {
   border: none;
