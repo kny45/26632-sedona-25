@@ -44,12 +44,12 @@ p {
   flex-wrap: wrap;
 }
 
-.site-navigation-item a {
+.site-navigation-item {
   color: #000000;
   display: block;
 }
 
-.site-navigation-item a {
+.site-navigation-item {
   box-sizing: border-box;
   width: 239px;
   padding-top: 15px;
@@ -58,19 +58,19 @@ p {
   text-align: center;
 }
 
-.site-navigation-item:nth-child(1) a {
+.site-navigation-item:nth-child(1) {
   text-align: left;
   padding-left: 72px;
 }
 
-.site-navigation-item:nth-child(2) a {
+.site-navigation-item:nth-child(2) {
   text-align: left;
   padding-left: 73px;
 
   margin-right: 244px;
 }
 
-.site-navigation-item:nth-child(3) a {
+.site-navigation-item:nth-child(3) {
   text-align: left;
   padding-left: 76px;
 
@@ -80,16 +80,22 @@ p {
   */
 }
 
-.site-navigation-item:nth-child(4) a {
+.site-navigation-item:nth-child(4) {
   text-align: right;
   padding-right: 72px;
 }
 
-
-.site-navigation-list a:hover {
-  color: #81b3d2;
+.site-navigation-item a {
+  color: #000000;
 }
-.site-navigation-list a:focus {
+
+.site-navigation-list a:hover,
+.site-navigation-item a:focus {
+  color: #81b3d2;
+  opacity: 1;
+  outline: none;
+}
+.site-navigation-list a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -125,7 +131,7 @@ p {
 
 /* главная страница */
 
-.feature-item-numbered-white {
+.feature-item-numbered-white-wrapper {
   font-size: 14px;
   line-height: 21px;
   color: white;
@@ -133,13 +139,14 @@ p {
   background-color: #81b3d2;
 }
 
-.feature-item-numbered-white h3 {
+.feature-item-numbered-white-wrapper h3 {
   font-size: 21px;
   line-height: 21px;
   color: white;
   font-weight: 700;
   background-color: #81b3d2;
 }
+
 
 .feature-item-numbered-black {
   font-size: 14px;
@@ -206,8 +213,11 @@ p {
   border: none;
 }
 
-.hotel-search-button:hover {
+.hotel-search-button:hover,
+.hotel-search-button:focus {
   background-color: #604e43;
+  opacity: 1;
+  outline: none;
 }
 
 .hotel-search-button:active {
@@ -324,9 +334,10 @@ p {
 }
 
 .input-quantity {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: none;
+
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
@@ -341,6 +352,9 @@ p {
 
   opacity: 1;
   outline: none;
+
+  border: 2px solid #f2f2f2;
+
 }
 
 .input-quantity:focus {
@@ -372,7 +386,6 @@ p {
   border: 2px solid #e5e5e5;
 }
 
-
 .button-search {
   border: none;
   width: 458px;
@@ -386,8 +399,12 @@ p {
   text-transform: uppercase;
 }
 
-.button-search:hover{
+.button-search:hover,
+.button-search:focus {
   background-color: #669ec0;
+  border: none;
+  opacity: 1;
+  outline: none;
 }
 
 .button-search:active{
@@ -482,21 +499,30 @@ p {
   color: rgba(0, 0, 0, 0.3);
   font-weight: 400;
   background-color: white;
+  /*
   text-decoration: underline;
+  */
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
 }
 
-.search-results-sorttype-item a:hover {
+.search-results-sorttype-item a:hover,
+.search-results-sorttype-item a:focus {
   color: #81b3d2;
+  opacity: 1;
+  outline: none;
 }
 
 .search-results-sorttype-item a:active {
   color: black;
   text-decoration: none;
+  border: none;
 }
 
 .search-results-sorttype-current a {
   color: #81b3d2;
   text-decoration: none;
+  border: none;
 }
 
 .catalog-list {
@@ -510,6 +536,18 @@ p {
   font-weight: 700;
   background-color: #ffffff;
 }
+
+.catalog-item-header:hover,
+.catalog-item-header:focus {
+  color: #81b3d2;
+  opacity: 1;
+  outline: none;
+}
+
+.catalog-item-header:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 
 .catalog-item-info span {
   font-size: 14px;
@@ -537,8 +575,12 @@ p {
   padding-top: 3px;
 }
 
-.button-moreinfo:hover {
+.button-moreinfo:hover,
+.button-moreinfo:focus {
   background-color: #669ec0;
+  border: none;
+  opacity: 1;
+  outline: none;
 }
 
 .button-moreinfo:active {
@@ -563,8 +605,12 @@ p {
   padding-top: 3px;
 }
 
-.button-booking:hover {
+.button-booking:hover,
+.button-booking:focus {
   background-color: #604e43;
+  border: none;
+  opacity: 1;
+  outline: none;
 }
 
 .button-booking:active {
@@ -702,12 +748,149 @@ p {
   text-align: center;
 }
 
+
+.features-list-numbered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #eeeeee;
+}
+
 .features-list-numbered,
 .features-list-nonnumbered {
   margin: 0;
   padding: 0;
 
 }
+
+.feature-item-backgroundfoto {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  background-color: #81b3d2;
+}
+
+.feature-item-numbered-white-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  text-align: center;
+  align-items: top;
+}
+
+.feature-item-numbered-white-wrapper h3 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 47px; /* - px на высоту строки */
+  padding-bottom: 24px; /* - px на высоту строки */
+}
+
+.feature-item-numbered-white-wrapper span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 21px; /* - px на высоту строки */
+}
+
+.feature-item-numbered-white-wrapper p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 59px; /* - px на высоту строки */
+}
+
+.feature-item-foto-right {
+  width: 800px;
+  height: 256px;
+}
+
+.feature-item-foto-left {
+  width: 800px;
+  height: 256px;
+}
+
+.feature-item-numbered-black {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  text-align: center;
+  align-items: top;
+}
+
+.feature-item-numbered-black h3 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 47px; /* - px на высоту строки */
+  padding-bottom: 24px; /* - px на высоту строки */
+}
+
+.feature-item-numbered-black span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 21px; /* - px на высоту строки */
+}
+
+.feature-item-numbered-black p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 59px; /* - px на высоту строки */
+}
+
+.features-list-nonnumbered {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.features-list-nonnumbered li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  text-align: center;
+  align-items: top;
+}
+
+.features-list-nonnumbered h3 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 164px; /* - px на высоту строки */
+  padding-bottom: 22px; /* - px на высоту строки */
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*
+.feature-item-numbered-black span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 21px;
+}
+*/
+
+.features-list-nonnumbered p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 82px; /* - px на высоту строки */
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
 
 .hotel-search {
   display: flex;
@@ -736,24 +919,25 @@ p {
   text-align: center;
 }
 
+
 /* карта */
 
-/* тест
 .city-map {
+  margin: 0;
+  padding: 0;
   width: 1200px;
   height: 600px;
-  background-color: red;
-}
-*/
+} /* размер для section */
 
 .sedona-google-map {
   box-sizing: border-box;
   width: 1200px;
   height: 600px;
   border: 0;
-}
+}  /* размер для iframe */
 
 /* footer */
+
 footer {
   width: 1200px;
   margin-top: -120px;
@@ -836,8 +1020,12 @@ footer {
   background-color: #81b3d2;
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
   background-color: #669ec0;
+  border: none;
+  opacity: 1;
+  outline: none;
 }
 
 .social-button:active {
@@ -865,6 +1053,9 @@ footer {
   text-decoration: none;
   width: 197px;
   height: 41px;
+  border: none;
+  opacity: 1;
+  outline: none;
 }
 
 .htmlacademy-logo p {
@@ -874,8 +1065,12 @@ footer {
   color: black;
 }
 
-.htmlacademy-logo:hover path {
+.htmlacademy-logo:hover path,
+.htmlacademy-logo:focus path {
   fill: #81b3d2;
+  border: none;
+  opacity: 1;
+  outline: none;
 }
 
 .htmlacademy-logo:active path {
@@ -1074,3 +1269,14 @@ footer {
 }
 
 
+/* тени
+.site-header,
+.main-container,
+.footer-wrapper,
+.hotels-main,
+.footer-inner-page {
+  box-shadow:
+    0 10px 10px rgba(0, 0, 0, 0.1),
+    0 -10px 10px rgba(0, 0, 0, 0.1);
+}
+*/
