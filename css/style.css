@@ -17,8 +17,15 @@ a {
   text-decoration: none;
 }
 
+/*
 p {
   margin: 0;
+}
+*/
+
+img {
+  margin: 0;
+  padding: 0;
 }
 
 /* header */
@@ -430,15 +437,20 @@ p {
   background-color: #81b3d2;
   background-image: url(../img/filter-canyon.jpg);
   background-size: 1200px 800px;
-  background-position: top center;
+  background-position: center -300px;
   background-repeat: no-repeat;
 }
 
 .search-options h3 {
+  display: block;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
 }
 
 .search-options label {
@@ -448,24 +460,222 @@ p {
   color: #ffffff;
 }
 
+.search-options-form {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 5px;
+}
+
+.search-options-infrastructure {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-left: 72px;
+  padding-right: 115px;
+  width: 326px;
+}
+
+.search-options-housingtype {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-right: 350px;
+  width: 485px;
+}
+
+
+
+
+/* чек-боксы */
+
+.check-options {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  position: relative;
+
+  padding-bottom: 25px;
+}
+
+.check-options-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-options-input::-ms-check {
+  opacity: 0;
+}
+
+.check-options-box {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 0;
+  top: -2px;
+  background-image: url(../img/checkbox-off.svg);
+}
+
+.check-options-input:checked + .check-options-box {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  left: 0;
+  top: -2px;
+  background-image: url(../img/checkbox-on.svg);
+}
+
+
+.search-options-price {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 315px;
+}
+
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
+}
+
+.price-controls {
+  position: relative;
+  box-sizing: border-box;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 28px;
+  vertical-align: middle;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+/*
 .search-options-price span {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
 }
+*/
 
 .search-options-show {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   font-weight: 400;
   text-transform: uppercase;
+/*
   text-align: center;
   vertical-align: middle;
+*/
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
+  cursor: pointer;
 }
 
 .search-options-show:hover {
@@ -481,7 +691,7 @@ p {
   background-color: white;
 }
 
-.search-results-n-sort p {
+.search-results-sorttype {
   font-size: 12px;
   line-height: 18px;
   color: black;
@@ -671,6 +881,10 @@ p {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+
+/*
+  z-index: 10; - строка навигации над главной картинкой
+*/
 }
 
 .site-navigation-list {
@@ -691,24 +905,45 @@ p {
 /* main - welcome */
 
 .main-header {
+/*
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+*/
   margin: 0 auto;
   padding: 0;
 
+/*
+  margin-top: -80px;  - картинку под навигацию
+*/
+
   background-image: url(../img/main-canyon.jpg);
-  background-position: center top;
+  background-position: center -80px;
   background-size: 1200px 800px;
   background-repeat: no-repeat;
 }
 
 .welcome-sedona-wrapper {
-  margin: 0;
+  /*
+  margin: 0 auto;
   padding: 0;
-  padding-top: 132px;
-  padding-bottom: 79px; /* уточнить расстояние до маски */
+  */
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+
+  padding-top: 76px; /* +px под навигацией (132) */
+  padding-bottom: 15px; /* уточнить расстояние до маски */
+}
+
+.main-header-mask {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  height: 60px;
 }
 
 .features {
@@ -786,6 +1021,9 @@ p {
   padding: 0;
   padding-top: 47px; /* - px на высоту строки */
   padding-bottom: 24px; /* - px на высоту строки */
+
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .feature-item-numbered-white-wrapper span {
@@ -800,6 +1038,9 @@ p {
   margin: 0;
   padding: 0;
   padding-bottom: 59px; /* - px на высоту строки */
+
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .feature-item-foto-right {
@@ -840,6 +1081,8 @@ p {
   margin: 0;
   padding: 0;
   padding-bottom: 59px; /* - px на высоту строки */
+  padding-left: 65px;
+  padding-right: 65px;
 }
 
 .features-list-nonnumbered {
@@ -864,12 +1107,60 @@ p {
   display: block;
   margin: 0;
   padding: 0;
-  padding-top: 164px; /* - px на высоту строки */
+  padding-top: 162px; /* - px на высоту строки */
   padding-bottom: 22px; /* - px на высоту строки */
 
   color: #000000;
   background-color: #ffffff;
+
+  position: relative;
 }
+
+.feature-item-housing::before {
+  content: "";
+
+  position: absolute;
+  top: 60px;
+  left: 162px;
+
+  width: 75px;
+  height: 72px;
+
+  background-image: url(../img/icon-housing.svg);
+  background-repeat: no-repeat;
+
+}
+
+.feature-item-food::before {
+  content: "";
+
+  position: absolute;
+  top: 62px;
+  left: 162px;
+
+  width: 74px;
+  height: 770px;
+
+  background-image: url(../img/icon-food.svg);
+  background-repeat: no-repeat;
+
+}
+
+.feature-item-souvenirs::before {
+  content: "";
+
+  position: absolute;
+  top: 56px;
+  left: 168px;
+
+  width: 64px;
+  height: 76px;
+
+  background-image: url(../img/icon-souvenirs.svg);
+  background-repeat: no-repeat;
+
+}
+
 
 /*
 .feature-item-numbered-black span {
@@ -885,6 +1176,9 @@ p {
   margin: 0;
   padding: 0;
   padding-bottom: 82px; /* - px на высоту строки */
+
+  padding-left: 55px;
+  padding-right: 55px;
 
   color: #000000;
   background-color: #ffffff;
@@ -906,15 +1200,15 @@ p {
 .hotel-search h3 {
   margin: 0 auto;
   padding: 0;
-  padding-top: 54px;
+  padding-top: 50px;
 }
 
 .hotel-search p {
   display: block;
   width: 0 auto;
   padding: 0;
-  padding-top: 29px;
-  padding-bottom: 47px;
+  padding-top: 10px;
+  padding-bottom: 32px;
 
   text-align: center;
 }
@@ -927,13 +1221,16 @@ p {
   padding: 0;
   width: 1200px;
   height: 600px;
+  border: none;
 } /* размер для section */
 
 .sedona-google-map {
   box-sizing: border-box;
   width: 1200px;
   height: 600px;
-  border: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
 }  /* размер для iframe */
 
 /* footer */
@@ -1093,6 +1390,157 @@ footer {
   margin: 0 auto;
   padding: 0;
 }
+
+.search-results-n-sort {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-results-wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-results-total {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-left: 72px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 190px;
+}
+
+.search-results-sorttype {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-left: 46px;
+  width: 160px;
+}
+
+.search-results-sorttype-list {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-results-sorttype-item {
+  display: block;
+  margin: 0;
+  padding-left: 30px;
+}
+.search-results-sorttype-item:first-child {
+  padding: 0;
+}
+
+.search-results-sorttype-updown {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-right: 73px;
+
+  align-items: center;
+  list-style: none;
+}
+
+.search-results-sorttype-up {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 12px;
+  border: none;
+  opacity: 1;
+  outline: none;
+}
+
+.search-results-sorttype-up:focus path,
+.search-results-sorttype-up:hover path {
+  fill: #000000;
+  border: none;
+  opacity: 1;
+  outline: none;
+}
+
+
+.search-results-sorttype-up:active path {
+  fill: #81b3d2;
+  border: none;
+  opacity: 1;
+  outline: none;
+}
+
+.search-results-sorttype-down {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-left: 12px;
+  border: none;
+  opacity: 1;
+  outline: none;
+}
+
+.search-results-sorttype-down:focus path,
+.search-results-sorttype-down:hover path {
+  fill: #000000;
+  border: none;
+  opacity: 1;
+  outline: none;
+}
+
+
+.search-results-sorttype-down:active path {
+  fill: #81b3d2;
+  border: none;
+  opacity: 1;
+  outline: none;
+}
+
+.search-results-sorttype-updown-current path {
+  fill: #81b3d2;
+  border: none;
+  opacity: 1;
+  outline: none;
+}
+
+
+/*
+.search-results-sorttype-up::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 0px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url(../img/icon-dir-up.svg);
+  background-color: #cacaca;
+  background-repeat: no-repeat;
+}
+
+.search-results-sorttype-up::before + .search-results-sorttype-updown-current {
+
+}
+*/
+
+
 
 .catalog-list {
   margin: 0;
@@ -1268,15 +1716,16 @@ footer {
   background-repeat: repeat-x;
 }
 
-
-/* тени
 .site-header,
 .main-container,
 .footer-wrapper,
-.hotels-main,
-.footer-inner-page {
+.footer-inner-page,
+.inner-page header,
+.inner-page main,
+.search-options,
+.search-results {
   box-shadow:
-    0 10px 10px rgba(0, 0, 0, 0.1),
-    0 -10px 10px rgba(0, 0, 0, 0.1);
+    -10px 0 5px -5px rgba(0, 0, 0, 0.1),
+    10px 0 5px -5px rgba(0, 0, 0, 0.1);
 }
-*/
+
