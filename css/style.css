@@ -812,7 +812,7 @@ img {
   height: 27px;
   margin: 0;
   padding: 0;
-  padding-top: 3px;
+
 }
 
 .button-booking:hover,
@@ -1555,14 +1555,17 @@ footer {
   margin: 0;
   padding: 0;
   width: 1200px;
+  /*
   height: 150px;
+  */
   border-top: 1px solid #f2f2f2;
 }
 
 .catalog-item-img {
+  display: block;
+  border: none;
   padding-left: 72px;
   padding-right: 30px;
-
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -1570,39 +1573,49 @@ footer {
   height: 90px;
 }
 
+.catalog-item-img a {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item-img img {
+  display: block;
+  border: none;
+  width: 135px;
+  height: 90px;
+}
+
 .catalog-item-info-wrapper {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   padding-top: 25px;
-  width: 963px;
-  height: 90px;
+  padding-bottom: 30px;
 }
 
 .catalog-item-info {
-  height: 90px;
   display: flex;
   flex-direction: column;
-  /*
-  justify-content: space-between;
-  */
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
+  width: 780px;
 }
 
 .catalog-item-info h4 {
   margin: 0;
+  padding: 0;
   padding-bottom: 8px; /* уточнить размер */
-}
-
-.catalog-item-header {
-  margin: 0;
 }
 
 .catalog-item-moreinfo-wrapper {
   display: flex;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -1614,9 +1627,6 @@ footer {
   width: 110px;
   display: flex;
   flex-direction: column;
-  /*
-  justify-content: space-between;
-  */
 }
 
 .catalog-item-type {
@@ -1639,7 +1649,6 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
 
-  height: 90px;
   width: 110px;
   margin: 0;
   padding: 0;
