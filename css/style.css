@@ -218,6 +218,8 @@ img {
   padding: 30px 0px;
   background-color: #766357;
   border: none;
+
+  cursor: default;
 }
 
 .hotel-search-button:hover,
@@ -225,15 +227,20 @@ img {
   background-color: #604e43;
   opacity: 1;
   outline: none;
+
+  cursor: default;
 }
 
 .hotel-search-button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+
+  cursor: default;
 }
 
 /* попап-форма поиска отелей на главной странице */
 .modal-hotel-search {
+  display: block;
   margin: 0;
   padding: 0;
 
@@ -301,6 +308,39 @@ img {
   opacity: 1;
   outline: none;
 }
+
+.form-hotel-search-item {
+  position: relative;
+}
+
+.input-date-icon {
+  position: absolute;
+
+  top: 8px;
+  left: 428px;
+
+}
+.input-date-icon path {
+  fill: #a9a9a9;
+}
+
+/*
+.input-date-label::after {
+  content: "";
+
+  position: absolute;
+
+  top: 2px;
+  left: 428px;
+
+
+  width: 21px;
+  height: 22px;
+
+  background-image: url(../img/input-calendar.svg);
+  background-repeat: no-repeat;
+}
+*/
 
 .input-date:hover {
   background-color: #ebebeb;
@@ -1222,6 +1262,9 @@ img {
   width: 1200px;
   height: 600px;
   border: none;
+
+  position: relative;
+  z-index: -3;
 } /* размер для section */
 
 .sedona-google-map {
@@ -1231,6 +1274,9 @@ img {
   border: none;
   margin: 0;
   padding: 0;
+
+  position: relative;
+  z-index: -2;
 }  /* размер для iframe */
 
 /* footer */
@@ -1738,3 +1784,21 @@ footer {
     10px 0 5px -5px rgba(0, 0, 0, 0.1);
 }
 
+
+/* стили для управления модальным окном */
+
+.modal-hotel-search-close {
+  display: none;
+}
+
+.modal-hotel-search {
+  position: relative;
+  z-index: -1;
+  animation-name: showFrame;
+  animation-duration: 0.6s;
+}
+
+@keyframes showFrame {
+  0% { transform: translateY(-400px); }
+  100% { transform: translateY(0); }
+}
