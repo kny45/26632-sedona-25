@@ -1022,7 +1022,7 @@ img {
 
 .features-header-text {
   display: block;
-  width: 490;
+  width: 490px;
   margin: 0 auto;
   padding: 0;
   padding-top: 30px;
@@ -1055,26 +1055,37 @@ img {
 }
 
 .feature-item-numbered-white-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 400px;
+  /*
   text-align: center;
   align-items: top;
+  */
 }
 
 .feature-item-numbered-white-wrapper h3 {
   display: block;
+  text-align: center;
   margin: 0;
   padding: 0;
   padding-top: 47px; /* - px на высоту строки */
   padding-bottom: 24px; /* - px на высоту строки */
-
+/*
   padding-left: 120px;
   padding-right: 120px;
+*/
+  width: 156px;
+  box-sizing: border-box;
 }
 
 .feature-item-numbered-white-wrapper span {
   display: block;
+  text-align: center;
   margin: 0;
   padding: 0;
   padding-bottom: 21px; /* - px на высоту строки */
@@ -1082,12 +1093,15 @@ img {
 
 .feature-item-numbered-white-wrapper p {
   display: block;
+  text-align: center;
   margin: 0;
   padding: 0;
   padding-bottom: 59px; /* - px на высоту строки */
 
   padding-left: 50px;
   padding-right: 50px;
+
+  width: 300px;
 }
 
 .feature-item-foto-right {
@@ -1164,7 +1178,9 @@ img {
   padding: 0;
   width: 400px;
   text-align: center;
+  /*
   align-items: top;
+  */
 }
 
 .features-list-nonnumbered h3 {
@@ -1268,14 +1284,14 @@ img {
   margin: 0 auto;
   padding: 0;
   padding-top: 50px;
+  padding-bottom: 24px;
 }
 
 .hotel-search p {
   display: block;
-  width: 0 auto;
+  margin: 0 auto;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 32px;
+  padding-bottom: 47px;
 
   text-align: center;
 }
@@ -1671,7 +1687,9 @@ img {
 
 .catalog-item-info-wrapper {
   display: flex;
+  /*
   align-items: top;
+  */
   justify-content: space-between;
   margin: 0;
   padding: 0;
