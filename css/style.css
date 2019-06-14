@@ -22,6 +22,10 @@ img {
   padding: 0;
 }
 
+input[type="text"] {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
 /* header */
 
 .site-navigation {
@@ -74,11 +78,6 @@ img {
 .site-navigation-item:nth-child(3) {
   text-align: left;
   padding-left: 76px;
-
-  /*
-  text-align: right;
-  padding-right: 73px;
-  */
 }
 
 .site-navigation-item:nth-child(4) {
@@ -116,8 +115,6 @@ img {
 .site-navigation-item-current a:focus {
   color: #766357;
 }
-
-
 
 .features-header {
   font-size: 21px;
@@ -259,9 +256,6 @@ img {
   padding: 55px;
 
   background-color: white;
-  /*
-  rgba(0, 1, 1, 0.15);
-  */
 
   position: absolute;
 
@@ -280,13 +274,8 @@ img {
   padding: 0;
   padding-bottom: 30px;
 
-
   justify-content: space-between;
-  /*
-  justify-content: flex-start;
-  */
   align-items: center;
-
 }
 
 .form-hotel-search-item label {
@@ -323,7 +312,6 @@ img {
 
   opacity: 1;
   outline: none;
-
 }
 
 .form-hotel-search-item {
@@ -335,10 +323,15 @@ img {
 
   top: 8px;
   left: 428px;
-
 }
 .input-date-icon path {
   fill: #a9a9a9;
+}
+.input-date-icon:hover path {
+  fill: #000000;
+}
+.input-date-icon:active path {
+  fill: #81b3d2;
 }
 
 .input-date:hover {
@@ -401,7 +394,6 @@ img {
   outline: none;
 
   border: 2px solid #f2f2f2;
-
 }
 
 .input-quantity:focus {
@@ -427,12 +419,21 @@ img {
 
   opacity: 1;
   outline: none;
-} /* ? как сделать "картинки" на кнопках как на макете */
-
+}
 .button-plus:focus,
 .button-minus:focus {
   border: 2px solid #e5e5e5;
 }
+
+.button-plus:hover .btn-lessmore,
+.button-minus:hover .btn-lessmore {
+  fill: black;
+}
+.button-plus:active .btn-lessmore,
+.button-minus:active .btn-lessmore {
+  fill: #81b3d2;
+}
+
 
 .button-search {
   border: none;
@@ -464,7 +465,7 @@ img {
 /* страница со списком отелей */
 
 .search-options {
-  background-color: #81b3d2;
+  background-color: #6e5e5e;
   background-image: url(../img/filter-canyon.jpg);
   background-size: 1200px 800px;
   background-position: center -300px;
@@ -517,8 +518,6 @@ img {
   padding-right: 350px;
   width: 485px;
 }
-
-
 
 
 /* чек-боксы */
@@ -696,15 +695,6 @@ img {
   left: 80%;
 }
 
-/*
-.search-options-price span {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #ffffff;
-}
-*/
-
 .search-options-show {
   display: block;
   margin: 0 auto;
@@ -716,10 +706,7 @@ img {
   color: #ffffff;
   font-weight: 400;
   text-transform: uppercase;
-/*
-  text-align: center;
-  vertical-align: middle;
-*/
+
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
   cursor: pointer;
@@ -756,9 +743,7 @@ img {
   color: rgba(0, 0, 0, 0.3);
   font-weight: 400;
   background-color: white;
-  /*
-  text-decoration: underline;
-  */
+
   text-decoration: none;
   border-bottom: 1px dotted #81b3d2;
 }
@@ -908,8 +893,6 @@ img {
 }
 
 
-
-
 /* --- стили для сеток --- */
 
 /* главная страница */
@@ -928,10 +911,6 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-
-/*
-  z-index: 10; - строка навигации над главной картинкой
-*/
 }
 
 .site-navigation-list {
@@ -953,20 +932,8 @@ img {
 /* main - welcome */
 
 .main-header {
-/*
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  display: -ms-flexbox;
-  -ms-flex-direction: column;
-*/
   margin: 0 auto;
   padding: 0;
-
-/*
-  margin-top: -80px;  - картинку под навигацию
-*/
 
   background-color: #e2eff7;
   background-image: url(../img/main-canyon.jpg);
@@ -976,16 +943,13 @@ img {
 }
 
 .welcome-sedona-wrapper {
-  /*
-  margin: 0 auto;
-  padding: 0;
-  */
+
   max-width: 100%;
   box-sizing: border-box;
   text-align: center;
 
-  padding-top: 76px; /* +px под навигацией (132) */
-  padding-bottom: 15px; /* уточнить расстояние до маски */
+  padding-top: 76px; /* +px под навигацией */
+  padding-bottom: 15px; /* расстояние до маски */
 }
 
 .main-header-mask {
@@ -1045,7 +1009,7 @@ img {
 
 }
 
-.feature-item-backgroundfoto {
+.feature-item-backgroundphoto {
   display: flex;
   align-items: center;
   margin: 0;
@@ -1062,10 +1026,6 @@ img {
   margin: 0;
   padding: 0;
   width: 400px;
-  /*
-  text-align: center;
-  align-items: top;
-  */
 }
 
 .feature-item-numbered-white-wrapper h3 {
@@ -1075,10 +1035,7 @@ img {
   padding: 0;
   padding-top: 47px; /* - px на высоту строки */
   padding-bottom: 24px; /* - px на высоту строки */
-/*
-  padding-left: 120px;
-  padding-right: 120px;
-*/
+
   width: 156px;
   box-sizing: border-box;
 }
@@ -1104,12 +1061,12 @@ img {
   width: 300px;
 }
 
-.feature-item-foto-right {
+.feature-item-photo-right {
   width: 800px;
   height: 256px;
 }
 
-.feature-item-foto-left {
+.feature-item-photo-left {
   width: 800px;
   height: 256px;
 }
@@ -1120,14 +1077,9 @@ img {
   margin: 0;
   padding: 0;
   width: 400px;
-  /*
-  text-align: center;
-  */
+
   justify-content: flex-start;
   align-items: center;
-  /*
-  align-items: top;
-  */
 }
 
 .feature-item-numbered-black h3 {
@@ -1178,9 +1130,6 @@ img {
   padding: 0;
   width: 400px;
   text-align: center;
-  /*
-  align-items: top;
-  */
 }
 
 .features-list-nonnumbered h3 {
@@ -1242,15 +1191,6 @@ img {
 }
 
 
-/*
-.feature-item-numbered-black span {
-  display: block;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 21px;
-}
-*/
-
 .features-list-nonnumbered p {
   display: block;
   margin: 0;
@@ -1308,10 +1248,7 @@ img {
 
   line-height: 0;
   font-size: 0;
-/*
-  background-color: #cbdda9;
-  background-image: url(../img/sedona-map.jpg);
-*/
+
   position: relative;
 
   z-index: 0;
@@ -1329,6 +1266,7 @@ img {
   line-height: 0;
   font-size: 0;
 
+  background-color: #cbdda9;
   background-image: url(../img/sedona-map.jpg);
 
   position: relative;
@@ -1360,19 +1298,7 @@ img {
 }
 
 .footer-wrapper {
-/*
-  width: 1200px;
-  margin: 0 auto;
-  margin-top: -120px;
-  padding: 0;
-
-  background-color: rgba(255, 255, 255, 0.9);
-*/
   display: flex;
-/*
-  position: relative;
-  z-index: 1;
-*/
 }
 
 .footer-visitsedona {
@@ -1387,9 +1313,6 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
-  /*
-  background-color: rgba(255, 255, 255, 0.9);
-  */
 }
 
 .footer-social {
@@ -1480,7 +1403,6 @@ img {
 /* страница со списком отелей */
 
 .search-options {
-  background-color: transparent;
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -1623,29 +1545,6 @@ img {
 }
 
 
-/*
-.search-results-sorttype-up::before {
-  content: "";
-
-  position: absolute;
-  top: 5px;
-  left: 0px;
-
-  width: 15px;
-  height: 15px;
-
-  background-image: url(../img/icon-dir-up.svg);
-  background-color: #cacaca;
-  background-repeat: no-repeat;
-}
-
-.search-results-sorttype-up::before + .search-results-sorttype-updown-current {
-
-}
-*/
-
-
-
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -1653,15 +1552,11 @@ img {
 
 .catalog-item-article {
   display: flex;
-  /*
-  align-items: center;
-  */
+
   margin: 0;
   padding: 0;
   width: 1200px;
-  /*
-  height: 150px;
-  */
+
   border-top: 1px solid #f2f2f2;
 }
 
@@ -1694,9 +1589,7 @@ img {
 
 .catalog-item-info-wrapper {
   display: flex;
-  /*
-  align-items: top;
-  */
+
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -1716,7 +1609,7 @@ img {
 .catalog-item-info h4 {
   margin: 0;
   padding: 0;
-  padding-bottom: 8px; /* уточнить размер */
+  padding-bottom: 8px;
 }
 
 .catalog-item-moreinfo-wrapper {
@@ -1736,7 +1629,7 @@ img {
 }
 
 .catalog-item-type {
-  padding-bottom: 13px; /* уточнить размер*/
+  padding-bottom: 13px;
 }
 
 .item-price {
@@ -1837,12 +1730,6 @@ img {
   padding: 0;
   width: 1200px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-
-  /*
-    border: 1px solid red;
-    10px 0 5px -5px rgba(0, 0, 0, 0.5),
-    10px 0 5px -5px rgba(0, 0, 0, 0.5);
-  */
 }
 
 
@@ -1857,26 +1744,27 @@ img {
 }
 
 .modal-hotel-search {
-  /*
-  display: block;
-  position: relative;
-  */
   z-index: 1;
 
-  animation-name: showFrame;
-  animation-duration: 0.6s;
+  -webkit-animation-name: showframe;
+          animation-name: showframe;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
-/*
-.features,
-.feature-list-wrapper,
-.features-list-numbered,
-*/
 .feature-item-numbered-black {
   z-index: 5;
 }
 
-@keyframes showFrame {
-  0%   { transform: translateY(-400px); }
-  100% { transform: translateY(0); }
+@-webkit-keyframes showframe {
+  0%   { -webkit-transform: translateY(-400px);
+                 transform: translateY(-400px); }
+  100% { -webkit-transform: translateY(0);
+                 transform: translateY(0); }
+}
+@keyframes showframe {
+  0%   { -webkit-transform: translateY(-400px);
+                 transform: translateY(-400px); }
+  100% { -webkit-transform: translateY(0);
+                 transform: translateY(0); }
 }
